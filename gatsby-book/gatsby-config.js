@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/analysis",
+  pathPrefix: `/analysis`,
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
@@ -17,6 +17,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
+              destinationDir: `analysis/`,
               ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`]
             }
           },
