@@ -1,13 +1,20 @@
 module.exports = {
-  pathPrefix: `/analysis`,
+  pathPrefix: `/math`,
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `content`,
+        name: `abbott`,
         path: `${__dirname}/../abbott`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `harveymudd`,
+        path: `${__dirname}/../harveymudd`
       }
     },
     {

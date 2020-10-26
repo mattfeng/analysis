@@ -14,6 +14,7 @@ exports.createPages = async ({ graphql, actions}) => {
       edges {
         node {
           slug
+          fileAbsolutePath
           frontmatter {
             slug
             title
