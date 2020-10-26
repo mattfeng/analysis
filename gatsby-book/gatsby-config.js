@@ -1,5 +1,6 @@
+const pathPrefix = 
 module.exports = {
-  pathPrefix: `/math`,
+  pathPrefix: `/${pathPrefix}`,
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
@@ -24,7 +25,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              destinationDir: `analysis/`,
+              destinationDir: pathPrefix,
               ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`]
             }
           },
