@@ -1,4 +1,5 @@
-const pathPrefix = 
+const pathPrefix = `math`
+
 module.exports = {
   pathPrefix: `/${pathPrefix}`,
   plugins: [
